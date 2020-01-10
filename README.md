@@ -81,6 +81,8 @@ Here are some things you need to worry about:
 
 Here are some things you don't need to worry about:
 
+1. Don't worry about the font too much. You can use `"EB Garamond", serif` as
+   the font for the text in the cart popup.
 1. Don't worry about different styles for different screen sizes (mobile
    responsive styles). The cart popup is so small, you can assume that it will
    look exactly the same on mobile devices. So you don't need to use
