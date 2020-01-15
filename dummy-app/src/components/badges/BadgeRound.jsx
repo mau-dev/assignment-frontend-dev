@@ -8,13 +8,13 @@ const BadgeRound = styled.div(props => ({
   alignItems: 'center',
   textAlign: 'center',
   verticalAlign: 'center',
-  height: '14px',
-  width: '14px',
+  height: '17px',
+  width: '17px',
   fontSize: '0.5em',
   color: '#ffffff',
   border: '2px solid white',
   position: 'absolute',
-  top: '-1.3em',
+  top: '-0.6em',
   left: '1.4em'
 
 

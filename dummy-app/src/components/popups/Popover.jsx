@@ -11,9 +11,16 @@ const PopoverContainer = styled.div(props => ({
 }));
 
 const ContentContainer = styled.div(props => ({
-  position: "relative",
-  border: "1px solid black",
-  zIndex: 2
+  position: "absolute",
+  top: "0",
+  right: "0",
+  border: "1px solid rgb(102, 102, 102)",
+  borderRadius: "5px",
+  width: '225px',
+  backgroundColor: "white",
+  padding: '0.5em',
+  zIndex: 1000,
+  fontFamily:  'EB Garamond, serif'
 }));
 
 // This is an invisible overlay that takes up the entire screen. This helps
