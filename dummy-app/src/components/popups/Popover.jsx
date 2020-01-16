@@ -8,10 +8,7 @@ const PopoverContainer = styled.div(props => ({
   // tip: you can assume that the parent component of this component uses
   // `position: relative` (and you can see that `CartIconContainer` in
   // `CartIcon.jsx` indeed uses `position: relative`)
-}));
-
-const ContentContainer = styled.div(props => ({
-  position: "absolute",
+  position: 'absolute',
   top: "0",
   right: "0",
   border: "1px solid rgb(102, 102, 102)",
@@ -21,6 +18,10 @@ const ContentContainer = styled.div(props => ({
   padding: '0.5em',
   zIndex: 1000,
   fontFamily:  'EB Garamond, serif'
+}));
+
+const ContentContainer = styled.div(props => ({
+  position: "relative"
 }));
 
 // This is an invisible overlay that takes up the entire screen. This helps
