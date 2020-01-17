@@ -8,12 +8,29 @@ import LogoArtling from "../svg/LogoArtling";
 
 const Header = styled.header(props => ({
   padding: "1em 0px",
-  borderBottom: `1px solid ${props.theme.colors.gray}`
+  borderBottom: `1px solid ${props.theme.colors.gray}`,
+  fontFamily:  'EB Garamond, serif'
 }));
+
+const LanguageBar = styled.div(props => ({
+
+  height: '35px',
+  width: '100%',
+  backgroundColor: '#f3f3f3',
+  padding: '8px 0',
+  fontSize: '9pt',
+  zIndex: '2'
+
+
+}));
+
 
 const NavigationMain = () => {
   return (
+    <>
+     <LanguageBar />
     <Header>
+
       <Container>
         <Row>
           <Col sm={3}>
@@ -36,6 +53,7 @@ const NavigationMain = () => {
         </Row>
       </Container>
     </Header>
+    </>
   );
 };
 

@@ -9,8 +9,8 @@ const PopoverContainer = styled.div(props => ({
   // `position: relative` (and you can see that `CartIconContainer` in
   // `CartIcon.jsx` indeed uses `position: relative`)
   position: 'absolute',
-  top: "0",
-  right: "0",
+  top: "-28px",
+  right: "1px",
   border: "1px solid rgb(102, 102, 102)",
   borderRadius: "5px",
   width: '225px',

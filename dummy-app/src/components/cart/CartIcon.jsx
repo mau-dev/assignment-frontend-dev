@@ -56,7 +56,8 @@ const SubtotalContainer = styled.div`
 
          &:nth-child(2) {
             position: absolute;
-            right: 5;
+            right: 5px;
+
         }
     }
 
@@ -110,8 +111,8 @@ const CartIcon = () => {
                 </div>
                 {DUMMY_DATA.map( item => <CartItem data={item} /> )}
                 <SubtotalContainer>
-                    <p style={{paddingLeft: '5px'}}>Subtotal</p>
-                    <p style={{position: 'absolute', right: '5px'}}>S$ { commaAmount}</p>
+                    <p>Subtotal</p>
+                    <p>S$ { commaAmount}</p>
                 </SubtotalContainer>
                     <Button as="a"
                             href="https://theartling.com/en/cart/"
