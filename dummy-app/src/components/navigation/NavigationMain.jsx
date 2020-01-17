@@ -27,33 +27,32 @@ const LanguageBar = styled.div(props => ({
 
 const NavigationMain = () => {
   return (
-    <>
-     <LanguageBar />
-    <Header>
-
-      <Container>
-        <Row>
-          <Col sm={3}>
-            <LogoArtling />
-          </Col>
-          <Col>
-            <FlexRowCentered justifyContent="space-around">
-              <div>Art</div>
-              <div>Design</div>
-              <div>Prints</div>
-              <div>Books</div>
-              <div>Discover</div>
-            </FlexRowCentered>
-          </Col>
-          <Col sm={3}>
-            <FlexRowCentered justifyContent="flex-end">
-              <CartIcon />
-            </FlexRowCentered>
-          </Col>
-        </Row>
-      </Container>
-    </Header>
-    </>
+    <div>
+        <LanguageBar />
+        <Header>
+          <Container>
+            <Row>
+              <Col sm={3}>
+                <LogoArtling />
+              </Col>
+              <Col>
+                <FlexRowCentered justifyContent="space-around">
+                  <div>Art</div>
+                  <div>Design</div>
+                  <div>Prints</div>
+                  <div>Books</div>
+                  <div>Discover</div>
+                </FlexRowCentered>
+              </Col>
+              <Col sm={3}>
+                <FlexRowCentered justifyContent="flex-end">
+                  <CartIcon />
+                </FlexRowCentered>
+              </Col>
+            </Row>
+          </Container>
+        </Header>
+    </div>
   );
 };
 
