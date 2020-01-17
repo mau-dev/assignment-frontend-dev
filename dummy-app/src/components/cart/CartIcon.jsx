@@ -50,11 +50,11 @@ const SubtotalContainer = styled.div`
             padding-bottom: 0.5em;
             font-size: 13px;
 
-         &:first-child {
+         &:first-of-type {
             padding-left: 5px;
            }
 
-         &:nth-child(2) {
+         &:nth-of-type(2) {
             position: absolute;
             right: 5px;
 
@@ -109,7 +109,7 @@ const CartIcon = () => {
                     <H4>{DUMMY_DATA.length} items in your cart</H4>
                     <hr style={{borderColor: 'rgb(200, 175, 106)'}} ></hr>
                 </div>
-                {DUMMY_DATA.map( item => <CartItem data={item} /> )}
+                {DUMMY_DATA.map( item => <CartItem data={item} key={item.title}/> )}
                 <SubtotalContainer>
                     <p>Subtotal</p>
                     <p>S$ { commaAmount}</p>

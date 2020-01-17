@@ -32,7 +32,7 @@ const ItemContainer = styled.div`
                     font-size: 13px;
 
 
-                    &:nth-child(3) {
+                    &:nth-of-type(3) {
                     text-align: right;
                    }
                 }
@@ -59,7 +59,7 @@ const CartItem = props => {
     return (
             <ItemContainer>
                 <div className = "img-div">
-                    <img src={data.thumbnail}  />
+                    <img src={data.thumbnail} alt="art-img" />
                 </div>
                 <div className = "text-div">
                     <p>{data.title}</p>
