@@ -93,7 +93,7 @@ const commaAmount = amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 const CartIcon = () => {
   // this is a React hook. If you don't know about hooks yet, don't worry about
   // this.
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
 
   return (
         <CartIconContainer>
@@ -102,7 +102,7 @@ const CartIcon = () => {
                 <BadgeRound>{DUMMY_DATA.length}</BadgeRound>
             </div>
 
-            <Popover isVisible={true} onClose={() => setIsActive(false)}>
+            <Popover isVisible={isActive} onClose={() => setIsActive(false)}>
             {/* Tip: .map() over the DUMMY_DATA here and mount <CartItem data={item} /> components*/}
             {/* <CartItem data={item} />*/}
                 <div>
